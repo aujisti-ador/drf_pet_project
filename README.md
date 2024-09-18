@@ -63,7 +63,7 @@ To make changes to your code:
 If you need to apply database migrations, run the following command:
 
 ```bash
-docker-compose run web poetry run python manage.py migrate
+docker-compose run backend python manage.py migrate
 ```
 
 ## Stopping the Containers
