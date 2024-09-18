@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ../
+      dockerfile: container/main/Dockerfile
+    container_name: django_app
+    command: gunicorn --workers 3 --bind 0.0.0.0:8000 config.wsgi:application
+    volumes:
+      - ../source/main:/app
+      - /app/venv  # Ensure the virtual environment directory is not overwritten
+    networks:
+      - common-net
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1  # Set to 0 for production
+
+networks:
+  common-net:
+    external: true
