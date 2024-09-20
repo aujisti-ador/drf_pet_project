@@ -1,6 +1,3 @@
-Here's your content reformatted in a clean and convenient `README.md` format:
-
-```markdown
 # Django Project with Docker
 
 This project is a Django application set up with Docker, Poetry for dependency management, and Gunicorn as the WSGI server. The project also includes MySQL and Redis services configured via Docker Compose.
@@ -83,6 +80,3 @@ docker-compose down
 - **Database Connection**: Check the `docker-compose.yml` configuration for database connection settings and ensure that the MySQL service is running.
 
 For further assistance, refer to the [Docker documentation](https://docs.docker.com/) or the [Django documentation](https://docs.djangoproject.com/en/stable/).
-```
-
-This `README.md` provides clear and structured instructions for setting up and managing your Django project, making it easy for others (or yourself) to follow.
