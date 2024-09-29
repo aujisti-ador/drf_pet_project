@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.12-slim
+FROM python:3.13.0rc2-slim
 
 # Set environment variables to ensure the Python output is not buffered
 ENV PYTHONUNBUFFERED=1
